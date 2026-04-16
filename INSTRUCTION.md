@@ -24,6 +24,12 @@ Test app with busybox
 kubectl exec -n todoapp -it busybox -- curl http://todoapp:8000/api/ready/
 ```
 
+and
+
+```bash
+kubectl exec -n todoapp -it busybox -- curl http://todoapp:8000/api/health/
+```
+
 ## Accessing the app
 
 To access the app follow the [app link](http://localhost:8000/)
