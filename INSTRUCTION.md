@@ -18,18 +18,6 @@ To test app you need to map ports via ```port-forward``` function
 kubectl port-forward pod/todoapp -n todoapp 8000:8000
 ```
 
-Test app with busybox
-
-```bash
-kubectl exec -n todoapp -it busybox -- curl http://todoapp:8000/api/ready/
-```
-
-and
-
-```bash
-kubectl exec -n todoapp -it busybox -- curl http://todoapp:8000/api/health/
-```
-
 ## Accessing the app
 
 To access the app follow the [app link](http://localhost:8000/)
