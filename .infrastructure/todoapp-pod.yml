@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: todoapp
-    image: killingrace/todoapp:3.0.0
+    image: killingrace/todoapp:3.0.0 #my own private account
     ports:
       - containerPort: 8000
     livenessProbe:
